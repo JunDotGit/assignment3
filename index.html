@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Pokémon Memory Game</h1>
+    <div id="controls">
+      <button id="start-btn">Start</button>
+      <button id="reset-btn">Reset</button>
+      <button class="diff-btn" data-diff="easy">Easy</button>
+      <button class="diff-btn" data-diff="medium">Medium</button>
+      <button class="diff-btn" data-diff="hard">Hard</button>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+      <button id="power-up">⚡ Power-Up</button>
+    </div>
+    <div id="status">
+      <p>Total number of pairs: <span id="total-pairs">0</span></p>
+      <p>Number of matches: <span id="matched-count">0</span></p>
+      <p>Number of pair left: <span id="pairs-left">0</span></p>
+      <p>Number of clicks: <span id="clicks">0</span></p>
+      <p id="time-info">You got 100 seconds. 0 seconds passed!</p>
+    </div>
+  </header>
+  
+  <div id="game_grid">
+    <div class="card">
+      <img id="img1" class="front_face" src="001.png" data-id="001" alt="">
+      <img class="back_face" src="back.webp" alt="">
+    </div>
+    <div class="card">
+      <img id="img2" class="front_face" src="002.png" data-id="002" alt="">
+      <img class="back_face" src="back.webp" alt="">
+    </div>
+    <div class="card">
+      <img id="img3" class="front_face" src="003.png" data-id="003" alt="">
+      <img class="back_face" src="back.webp" alt="">
+    </div>
+    <div class="card">
+      <img id="img4" class="front_face" src="001.png" data-id="001"alt="">
+      <img class="back_face" src="back.webp" alt="">
+    </div>
+    <div class="card">
+      <img id="img5" class="front_face" src="002.png" data-id="002"alt="">
+      <img class="back_face" src="back.webp" alt="">
+    </div>
+    <div class="card">
+      <img id="img6" class="front_face" src="003.png" data-id="003"alt="">
+      <img class="back_face" src="back.webp" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
