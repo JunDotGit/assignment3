@@ -91,8 +91,8 @@ function setup() {
         lockBoard = true;
 
         if (firstCard.dataset.id === secondCard.dataset.id) {
-          $(`#${firstCard.id}`).parent().off("click");
-          $(`#${secondCard.id}`).parent().off("click");
+          $(`#${firstCard.id}`).parent().addClass("matched").off("click");
+          $(`#${secondCard.id}`).parent().addClass("matched").off("click");
           matchedPairs++;
           matchedSinceStart++;
           updateMatchedCount();
@@ -139,7 +139,7 @@ function setup() {
 
     $(".card").addClass("flip");
     setTimeout(() => {
-      $(".card").removeClass("flip");
+      $(".card").not(".matched").removeClass("flip");
     }, 1000);
   });
 
