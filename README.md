@@ -6,6 +6,9 @@ https://shiny-tiramisu-65cfe7.netlify.app/
 ## 🎥 Video Demo (YouTube)
 https://youtu.be/tLkj36eRxfg
 
+## 📄 Github Link
+https://github.com/JunDotGit/assignment3
+
 ## 📄 Self-graded Checklist
 Included in the root of this repository.
 
